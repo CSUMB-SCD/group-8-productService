@@ -19,7 +19,7 @@ public class ProductController {
     @Autowired
     Manager manager;
 
-    @CrossOrigin()
+    @CrossOrigin
     @GetMapping ("/Product")
     @ResponseBody
     List<Product> getProducts(){
