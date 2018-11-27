@@ -13,7 +13,7 @@ import edu.csumb.cst438.productservice.api.products.Product;
 public class ProductDbClient {
     
     public List<Product> getAll(){
-        final String uri = "https://proj-zuul.herokuapp.com/prod/Product/";
+        final String uri = "https://proj-zuul.herokuapp.com/productdb/Product/";
 
         RestTemplate restTemplate = new RestTemplate();
         List<Product> result = restTemplate.getForObject(uri, ArrayList.class);
