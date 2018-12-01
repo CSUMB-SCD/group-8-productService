@@ -2,7 +2,7 @@ package edu.csumb.cst438.productservice.api.products;
 
 import org.springframework.data.annotation.Id;
 
-public class Catagory {
+public class Manufacturer {
 
     @Id
     public String id;
@@ -10,9 +10,10 @@ public class Catagory {
     public String name;
     public String description;
 
-    public Catagory() {}
 
-    public Catagory(String name, String description) {
+    public Manufacturer() {}
+
+    public Manufacturer(String name, String description) {
         this.name = name;
         this.description = description;
     }
