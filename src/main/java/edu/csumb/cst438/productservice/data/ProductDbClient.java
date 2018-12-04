@@ -1,5 +1,6 @@
 package edu.csumb.cst438.productservice.data;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,10 +13,10 @@ import edu.csumb.cst438.productservice.api.products.Product;
 public class ProductDbClient {
     
     public List<Product> getAll(){
-        final String uri = "https://proj-products.herokuapp.com/Product";
+        final String uri = "https://proj-zuul.herokuapp.com/productdb/Product/";
 
         RestTemplate restTemplate = new RestTemplate();
-        List<Product> result = restTemplate.getForObject(uri, List.class);
+        List<Product> result = restTemplate.getForObject(uri, ArrayList.class);
     
         return result;
     }
