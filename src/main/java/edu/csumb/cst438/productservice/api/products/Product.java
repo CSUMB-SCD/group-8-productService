@@ -14,6 +14,7 @@ public class Product {
     public Catagory catagory;
     public Manufacturer manufacturer;
     public String lo_rez;
+    public List<String> hi_rez;
 
     public Product() {}
 
@@ -25,6 +26,17 @@ public class Product {
         this.catagory = catagory;
         this.manufacturer = manufacturer;
         this.lo_rez = lo_rez;
+    }
+
+    public Product(String name, String description, int stock, double price, Catagory catagory, Manufacturer manufacturer, String lo_rez, ArrayList<String> hi_rez) {
+        this.name = name;
+        this.description = description;
+        this.stock = stock;
+        this.price = price;
+        this.catagory = catagory;
+        this.manufacturer = manufacturer;
+        this.lo_rez = lo_rez;
+        this.hi_rez = hi_rez;
     }
 
     @Override

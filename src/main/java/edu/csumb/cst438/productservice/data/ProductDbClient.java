@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 import org.springframework.web.client.RestTemplate;
 
+import edu.csumb.cst438.productservice.api.products.Payload;
 import edu.csumb.cst438.productservice.api.products.Product;
 
 @Repository
