@@ -1,5 +1,7 @@
 package edu.csumb.cst438.productservice.api.products;
 
+import java.util.List;
+
 import org.springframework.data.annotation.Id;
 
 public class Product {
